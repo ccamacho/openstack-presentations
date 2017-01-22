@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+\mode<presentation> {
+\usetheme{Madrid}
+}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\usepackage{multicol}
+
+
+\title[OpenStack 101 and BigData]{OpenStack 101 and services integration for supporting Data Processing toolkits}
+\author{ccamacho, dmellado}
+\institute[Red Hat]
+{
+Red Hat \\
+\medskip
+\textit{ccamacho@redhat.com, dmellado@redhat.com}
+}
+\date{\today}
+\begin{document}
+\begin{frame}
+\titlepage 
+\end{frame}
+\begin{frame}
+	\frametitle{Agenda}
+    \begin{columns}[t]
+    	\begin{column}{.5\textwidth}
+    		\tableofcontents[sections={1-2}]
+    	\end{column}
+    	\begin{column}{.5\textwidth}
+    		\tableofcontents[sections={3-4}]
+    	\end{column}
+    \end{columns}
+    
+    \vspace{1cm}
+    Available in:
+    
+     https://github.com/ccamacho/openstack-presentations/tree/master/2017-01-25-meetup-openstack101-bigdata
+\end{frame}
+
+\include{slides/01_cloud}
+\include{slides/02_openstack}
+\include{slides/03_bd_hadoop}
+\include{slides/04_sahara}
+\end{document} 
